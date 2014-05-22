@@ -4,24 +4,31 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Listen</title>
-	<link rel="icon" href="/Listen/favi.ico" type="image/x-icon">
-	<meta charset="utf-8">
-	<meta name="description" content="Instant Audiotool auto-brewed playlist for your day.">
-	<meta http-equiv="content-language" content="en-gb">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src="http://kh01.me/lib/jquery.cookie.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,200' rel='stylesheet' type='text/css' />
-	<link href='http://fonts.googleapis.com/css?family=Dosis:200&text=Listen.' rel='stylesheet' type='text/css' />
-	<link href="http://kh01.me/lib/grid.bootstrap.min.css" rel="stylesheet" type='text/css' />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <head>
+    <title>Listen</title>
+        <!--Meta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta charset="utf-8">
+        <meta name="description" content="Instant Audiotool auto-brewed playlist for your day.">
+        <meta http-equiv="content-language" content="en-gb">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-</head>
+        <!--Scripts-->
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="http://kh01.me/lib/jquery.cookie.js"></script>
+        <script src="script.js" type="text/javascript"></script>
+
+        <!--Links & StyleSheets-->
+        <link rel="icon" href="/Listen/favi.ico" type="image/x-icon">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,200' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Dosis:200&text=Listen.' rel='stylesheet' type='text/css' />
+        <link href="http://kh01.me/lib/grid.bootstrap.min.css" rel="stylesheet" type='text/css' />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    
 <body>
+    
 	<div class="container" id="auth" style="text-align:center;">
 		<h1 id="liner">Listen</h1>
 		<div class="col-md-4 col-md-offset-4 clearfix" id="authbutt" >
@@ -37,9 +44,10 @@
 			<div class="col-md-4 col-md-offset-4 clearfix visible-xs" id="logbutt" style="clear:both;" onclick="fetchAuthentication(true);" >
 			Connect
 			</div>
-			<div style="clear:both;padding-top:10px;">Don't trust me? Run on <a onclick="alert('Still working on this');">Leaf </a></div>
+			<div style="clear:both;padding-top:10px;">Don't trust me? Run on <a onclick="alert('Still working on this');">Leaf</a></div>
 		</div>
 	</div>
+    
 	<!-- Player down here-->
 	<div class="container" id="listen" style="display:none;">
 		<div id="seeker">
