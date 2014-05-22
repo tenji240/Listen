@@ -1,7 +1,8 @@
 <?php
 	header("Access-Control-Allow-Origin: http://www.audiotool.com");
 ?>
-<!DOCTYPE HTML>
+
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Listen</title>
@@ -13,54 +14,11 @@
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="http://kh01.me/lib/jquery.cookie.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,200' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Dosis:200&text=Listen.' rel='stylesheet' type='text/css'>
-	<link href="http://kh01.me/lib/grid.bootstrap.min.css" rel="stylesheet" type='text/css'>
-	<style>
-		::-webkit-scrollbar {  display:none;}
-		
-		body { font-family: 'Open Sans'; background-color: #282828; color:white;}
-		a { color:white; background: rgba(255,255,255,0.2); 
-			border-bottom:1px dashed #ff6a00; text-decoration:none;letter-spacing:1px;
-			 -moz-transition: .2s all ease; -webkit-transition: .2s all ease; transition: .2s all ease;
-			}
-		a:hover { background: rgba(255, 106, 0,0.5); text-decoration:none; color:white;}
-		h1 { color: #ff6a00; font-weight: 200; font-size: 330%; text-shadow: 1px 1px 15px rgba(255, 106, 0,0.4); }
-		
-		#liner { font-family:'Dosis',sans-serif; font-size:375%; letter-spacing:1px;}
-		
-		#authbutt, #logbutt, #playlistbutt { padding: 15px 0;border-radius:30px; background: rgba(255, 106, 0,0.6); cursor: pointer;}
-		#login { margin-top: 10px; text-align:center; padding:0}
-		.inputwrap{ padding:10px; font-size:150%; border-radius:30px; border: transparent; background: #323232; color:#aaa;}
-		input { width:100%; border:0; background: inherit; }
-		input[placeholder] { font-weight:200; text-align:center;}
-		
-		#seeker { height:2px; background: #383838; overflow:hidden; }
-		#wow { background: rgba(255, 106, 0,0.8); width: 0%; height: 2px; border-right: 2px white solid;
-		-moz-transition: .1s all ease; -webkit-transition: .1s all ease; transition: .1s all ease; 
-		}
-		.butt {display:inline-block; width:30px; height:30px; border-radius:50%; color: rgba(255,255,255,0.7); line-height:30px;
-				background:rgba(255, 106, 0,0.5); font-size:85%; font-weight:200;
-				text-align:center; -moz-transition: .3s all ease; -webkit-transition: .3s all ease; transition: .3s all ease; 
-				cursor:pointer;
-				}
-		.butt:hover { background:rgba(255, 106, 0,0.7);}
-		.disable { background: rgba(120,120,120,0.7); }
-		.disable:hover { background: rgba(120,120,120,0.9); }
-		
-		.love { -webkit-transform:rotateY(0deg);-moz-transform:rotateY(0deg);transform:rotateY(0deg);
-		-webkit-animation:.5s loving infinite linear;  -moz-animation:.5s loving infinite linear;  animation:.5s loving infinite linear; }
-		@-webkit-keyframes loving {
-		0% {-webkit-transform:rotateY(0deg); } 50% {-webkit-transform:rotateY(180deg); }
-		}
-		@-moz-keyframes loving {
-		0% {-moz-transform:rotateY(0deg); } 50% {-moz-transform:rotateY(180deg); }
-		}
-		@keyframes loving {
-		0% {transform:rotateY(0deg); } 50% {transform:rotateY(180deg); }
-		}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,200' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Dosis:200&text=Listen.' rel='stylesheet' type='text/css' />
+	<link href="http://kh01.me/lib/grid.bootstrap.min.css" rel="stylesheet" type='text/css' />
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
